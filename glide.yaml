@@ -1,0 +1,5 @@
+package: github.com/vjeffrey/go-game/game-time
+owners:
+- name: Victoria Jeffrey
+import:
+- package: github.com/fatih/color 
