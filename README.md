@@ -2,11 +2,11 @@
 
 ### this game is based off the following <a href="https://gocodecloud.com/blog/2016/03/19/writing-a-text-adventure-game-in-go---part-1/">tutorial.</a>
 
-## how it works
 
-`main.go`
- - sets us up with input and output, including color formatting
- - initializes the player data and calls player.Play() -> in `characters.go`
+## get started:
+ ### `make install && make play`
 
-`data.go` : data for the game
 
+
+Just putting this link here cause it's a really good go tutorial and i don't wanna lose the link:
+https://www.youtube.com/watch?v=MeOK1UzGHYw

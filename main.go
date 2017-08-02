@@ -6,7 +6,6 @@ import (
 	"github.com/fatih/color"
 	"math/rand"
 	"os"
-	"strconv"
 	"time"
 )
 
@@ -30,19 +29,15 @@ func setPlayerInfo() Character {
 	player.Alive = true
 	player.Weap = 1
 	player.CurrentLocation = "Room"
+	player.Health = 100
 
-	Output("cyan", "On a scale of 1-100, how healthy are you feeling today?")
-	health := UserInputln()
-	i, err := strconv.Atoi(health)
-	if err == nil {
-		player.Health = i
-	}
-
+	Output("cyan", "Good luck my friend!")
 	return player
 }
 
 func main() {
 	player = setPlayerInfo()
+	// setUpDB(player)
 	player.Play()
 }
 
